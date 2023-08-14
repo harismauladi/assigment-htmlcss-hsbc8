@@ -23,189 +23,21 @@
     </header>
     <!-- ======= HEADER AND NAV END ========= -->
     <!-- ======= MAIN START ========= -->
-    <main class="flex container font-poppins overflow-x-hidden">
+    <main class="flex flex-wrap container font-poppins overflow-x-hidden">
       <!-- SIDEBAR MENU -->
-      <aside
-        class="min-h-screen flex flex-col sm bg-white shadow-md p-4 rounded-md overflow-x-hidden transition ease-in-out duration-200 min-w-[5rem] md:hidden"
-      >
+      <aside class="p-2 mx-2 md:relative md:bottom-[2.7rem] md:max-w-[26rem]">
         <div
-          class="flex items-center p-2 hover:bg-slate-200 rounded-md max-w-[3rem]"
-        >
-          <button id="navMenu" name="nav-menu" type="button">
-            <span
-              class="nav-menu transition duration-300 ease-in-out origin-top-left bg-gray-600"
-              id="span1"
-            ></span>
-            <span
-              class="nav-menu transition duration-300 ease-in-out bg-gray-600"
-              id="span2"
-            ></span>
-            <span
-              class="nav-menu transition duration-300 ease-in-out origin-bottom-left bg-gray-600"
-              id="span3"
-            ></span>
-          </button>
-        </div>
-        <!-- ON NON-ACTIVE SIDEBAR -->
-        <div class="h-full flex flex-col items-center md:hidden" id="sideList">
-          <dfn title="Profile">
-            <div
-              class="my-10 p-2 hover:bg-slate-200 cursor-pointer rounded-md"
-              id="profile"
-            >
-              <img src="./src/assets/profile.svg" alt="Profile" />
-            </div>
-          </dfn>
-          <dfn title="Github">
-            <div class="my-10 p-2 hover:bg-slate-200 cursor-pointer rounded-md">
-              <img src="./src/assets/github.svg" alt="Github" />
-            </div>
-          </dfn>
-          <dfn title="Email">
-            <div class="my-10 p-2 hover:bg-slate-200 cursor-pointer rounded-md">
-              <img src="./src/assets/email.svg" alt="Email" />
-            </div>
-          </dfn>
-          <dfn title="Download Resume">
-            <a
-              href="https://drive.usercontent.google.com/download?id=1oNNsCHbGpF6n2rtE9TQ8Tg3cVanoP76X&export=download&authuser=0&confirm=t&uuid=4441d35f-9c50-4863-b7df-9bff8ef5f1a6&at=APZUnTWaUWA7eMDZxOIIRYd8SRUT:1691919055887"
-              target="_blank"
-            >
-              <div
-                class="my-10 p-2 hover:bg-slate-200 cursor-pointer rounded-md"
-              >
-                <img src="./src/assets/download.svg" alt="Resume" />
-              </div>
-            </a>
-          </dfn>
-        </div>
-        <!-- ON ACTIVE SIDEBAR -->
-        <div
-          class="p-10 hidden flex-col bg-white rounded-md my-10 justify-center shadow-md"
+          class="flex-col bg-white rounded-[1.25rem] md:my-10 justify-center shadow-md md:flex min-h-[53.25rem] md:min-w-[25rem]"
           id="activeSideList"
         >
-          <div class="flex flex-col justify-center items-center">
-            <img src="./src/assets/me.png" alt="" class="max-w-[6rem]" />
-            <h2 class="my-2 font-raleway font-[700] text-xl">Haris Mauladi</h2>
-            <h5 class="font-raleway font-[500] text-[0.6rem]">
-              FullStack Developer
-            </h5>
-            <div class="flex flex-wrap my-3 min-w-full p-1 justify-center">
-              <a
-                class="flex max-w-[3rem] v bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 justify-center items-center"
-                href="#"
-                target="_blank"
-              >
-                <img src="./src/assets/linkedin.svg" alt="" />
-              </a>
-              <a
-                class="flex max-w-[3rem] min-w-[3rem] bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 flex-grow justify-center items-center"
-                href="#"
-                target="_blank"
-              >
-                <!-- GITHUB SVG -->
-                <svg
-                  width="1.5rem"
-                  height="1.5rem"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Vector"
-                    d="M8.27246 0.326172C3.70408 0.326172 0.00390761 4.02635 0.00390761 8.59472C0.00291203 10.3304 0.548473 12.0224 1.5632 13.4305C2.57793 14.8387 4.01029 15.8916 5.65711 16.4399C6.07054 16.5119 6.22599 16.2638 6.22599 16.0463C6.22599 15.8504 6.21524 15.1996 6.21524 14.5067C4.13818 14.8896 3.60073 14.0007 3.43536 13.5352C3.34192 13.297 2.93924 12.5636 2.58783 12.3668C2.29843 12.2122 1.885 11.8294 2.57708 11.8195C3.22864 11.8087 3.69333 12.4189 3.84878 12.667C4.59295 13.9172 5.78114 13.5658 6.25658 13.3491C6.32935 12.8117 6.54598 12.4503 6.78412 12.2436C4.94437 12.0369 3.02193 11.3233 3.02193 8.16062C3.02193 7.261 3.34192 6.51766 3.86945 5.93804C3.78677 5.73132 3.49737 4.8838 3.95214 3.74687C3.95214 3.74687 4.64422 3.53023 6.22599 4.59522C6.8991 4.4084 7.59457 4.31438 8.29313 4.31575C8.99596 4.31575 9.69878 4.40835 10.3603 4.5944C11.942 3.51949 12.6341 3.7477 12.6341 3.7477C13.0889 4.88462 12.7995 5.73215 12.7168 5.93886C13.2435 6.51766 13.5643 7.25108 13.5643 8.16062C13.5643 11.3341 11.632 12.0369 9.79139 12.2436C10.0915 12.5016 10.3503 12.9977 10.3503 13.7733C10.3503 14.8788 10.3396 15.7677 10.3396 16.0472C10.3396 16.2638 10.495 16.5218 10.9085 16.4391C12.5496 15.8848 13.9757 14.8298 14.9859 13.4227C15.9962 12.0155 16.5398 10.327 16.5402 8.59472C16.5402 4.02635 12.84 0.326172 8.27163 0.326172H8.27246Z"
-                    fill="#0B0909"
-                  />
-                </svg>
-              </a>
-              <a
-                class="flex max-w-[3rem] min-w-[3rem] bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 justify-center items-center"
-                href="#"
-                target="_blank"
-              >
-                <img src="./src/assets/wa.svg" alt="" />
-              </a>
-              <a
-                class="flex max-w-[3rem] min-w-[3rem] bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 justify-center items-center"
-                href="#"
-                target="_blank"
-              >
-                <img src="./src/assets/instagram.svg" alt="" />
-              </a>
-            </div>
-            <div class="flex flex-col bg-primary p-8 rounded-3xl">
-              <div
-                class="flex flex-row p-3 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
-              >
-                <img src="./src/assets/phone.svg" alt="" />
-                <div class="flex flex-col mx-4 font-raleway">
-                  <h5 class="text-xs max-[390px]:text-[0.5rem]">Phone</h5>
-                  <p class="text-sm font-[600] max-[390px]:text-[0.6rem]">
-                    085711815850
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-row p-3 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2 max-w-[13rem]"
-              >
-                <img
-                  src="./src/assets/mail.svg"
-                  alt=""
-                  class="relative right-1"
-                />
-                <div class="flex flex-col mx-3 font-raleway">
-                  <h5 class="text-xs max-[390px]:text-[0.5rem]">Email</h5>
-                  <p class="text-sm font-[600] max-[390px]:text-[0.6rem]">
-                    haris1922.hmh@gmail.com
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-row p-3 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
-              >
-                <img
-                  src="./src/assets/location.svg"
-                  alt=""
-                  class="relative right-1"
-                />
-                <div class="flex flex-col mx-3 font-raleway">
-                  <h5 class="text-xs max-[390px]:text-[0.5rem]">Location</h5>
-                  <p class="text-sm font-[600] max-[390px]:text-[0.6rem]">
-                    Jakarta, Indonesia
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center">
-                <a
-                  class="flex justify-center items-center bg-secondary p-2 font-raleway rounded-[1.25rem] mt-2 hover:bg-orange-600"
-                  href="https://drive.usercontent.google.com/download?id=1oNNsCHbGpF6n2rtE9TQ8Tg3cVanoP76X&export=download&authuser=0&confirm=t&uuid=4441d35f-9c50-4863-b7df-9bff8ef5f1a6&at=APZUnTWaUWA7eMDZxOIIRYd8SRUT:1691919055887"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.979 19.804 4.587 19.412C4.195 19.02 3.99934 18.5493 4 18V15H6V18H18V15H20V18C20 18.55 19.804 19.021 19.412 19.413C19.02 19.805 18.5493 20.0007 18 20H6Z"
-                      fill="#F2F7FC"
-                    />
-                  </svg>
-                  <p class="text-[0.5rem] text-white mx-2">Download Resume</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-      <aside class="p-2 mx-2 relative bottom-14">
-        <div
-          class="max-[640px]:hidden sm:hidden flex-col bg-white rounded-[1.25rem] my-10 justify-center shadow-md md:flex min-h-[53.25rem] min-w-[25rem]"
-          id="activeSideList"
-        >
-          <div class="flex flex-col justify-center items-center">
-            <img src="./src/assets/me.png" alt="" class="max-w-[15rem]" />
+          <div
+            class="flex flex-col justify-center items-center max-[640px]:relative max-[640px]:top-10"
+          >
+            <img
+              src="./src/assets/me.png"
+              alt=""
+              class="max-w-[10rem] md:max-w-[15rem]"
+            />
             <h2 class="my-2 font-raleway font-[700] text-[1.776rem]">
               Haris Mauladi
             </h2>
@@ -217,14 +49,14 @@
             <div class="flex flex-wrap my-3 min-w-full p-1 justify-center">
               <a
                 class="flex max-w-[3rem] v bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 justify-center items-center"
-                href="#"
+                href="https://www.linkedin.com/in/haris-mauladi-83051a246/"
                 target="_blank"
               >
                 <img src="./src/assets/linkedin.svg" alt="" />
               </a>
               <a
                 class="flex max-w-[3rem] min-w-[3rem] bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 flex-grow justify-center items-center"
-                href="#"
+                href="https://github.com/harismauladi"
                 target="_blank"
               >
                 <!-- GITHUB SVG -->
@@ -244,92 +76,95 @@
               </a>
               <a
                 class="flex max-w-[3rem] min-w-[3rem] bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 justify-center items-center"
-                href="#"
+                href="https://wa.me/6285711815850"
                 target="_blank"
               >
                 <img src="./src/assets/wa.svg" alt="" />
               </a>
               <a
                 class="flex max-w-[3rem] min-w-[3rem] bg-primary p-3 rounded-lg mx-1 hover:bg-slate-200 justify-center items-center"
-                href="#"
+                href="https://instagram.com/_crzon?igshid=NGExMmI2YTkyZg=="
                 target="_blank"
               >
                 <img src="./src/assets/instagram.svg" alt="" />
               </a>
             </div>
-            <div
-              class="flex flex-col bg-primary p-8 rounded-3xl min-w-[21.875rem] min-h-[21.875rem]"
-            >
+            <div class="p-5">
               <div
-                class="flex flex-row p-4 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
+                class="flex flex-col bg-primary p-8 rounded-3xl md:min-w-[21.875rem] md:min-h-[21.875rem]"
               >
-                <img src="./src/assets/phone.svg" alt="" />
-                <div class="flex flex-col mx-4 font-raleway">
-                  <h5
-                    class="text-[0.875rem] text-[#1A100380] opacity-[50%] font-raleway"
-                  >
-                    Phone
-                  </h5>
-                  <p
-                    class="text-[0.875rem] font-[600] max-[390px]:text-[0.6rem]"
-                  >
-                    085711815850
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-row p-4 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
-              >
-                <img
-                  src="./src/assets/mail.svg"
-                  alt=""
-                  class="relative right-1"
-                />
-                <div class="flex flex-col mx-3 font-raleway">
-                  <h5 class="text-[0.875rem] text-[#1A100380] opacity-[50%]">
-                    Email
-                  </h5>
-                  <p class="text-[0.875rem] font-[600]">
-                    haris1922.hmh@gmail.com
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-row p-4 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
-              >
-                <img
-                  src="./src/assets/location.svg"
-                  alt=""
-                  class="relative right-1"
-                />
-                <div class="flex flex-col mx-3 font-raleway">
-                  <h5 class="text-[0.875rem] text-[#1A100380] opacity-[50%]">
-                    Location
-                  </h5>
-                  <p class="text-[0.875rem] font-[600]">Jakarta, Indonesia</p>
-                </div>
-              </div>
-              <div class="flex items-center justify-center">
-                <a
-                  class="flex justify-center items-center bg-secondary p-2 font-raleway rounded-[1.25rem] mt-2 hover:bg-orange-600"
-                  href="https://drive.usercontent.google.com/download?id=1oNNsCHbGpF6n2rtE9TQ8Tg3cVanoP76X&export=download&authuser=0&confirm=t&uuid=4441d35f-9c50-4863-b7df-9bff8ef5f1a6&at=APZUnTWaUWA7eMDZxOIIRYd8SRUT:1691919055887"
-                  target="_blank"
+                <div
+                  class="flex flex-row p-4 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    class="mx-2"
+                  <img src="./src/assets/phone.svg" alt="" />
+                  <div class="flex flex-col mx-4 font-raleway">
+                    <h5
+                      class="text-[0.875rem] text-[#1A100380] opacity-[50%] font-raleway"
+                    >
+                      Phone
+                    </h5>
+                    <p
+                      class="text-[0.875rem] font-[600] max-[390px]:text-[0.6rem]"
+                    >
+                      085711815850
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row p-4 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
+                >
+                  <img
+                    src="./src/assets/mail.svg"
+                    alt=""
+                    class="relative right-1"
+                  />
+                  <div class="flex flex-col mx-3 font-raleway">
+                    <h5 class="text-[0.875rem] text-[#1A100380] opacity-[50%]">
+                      Email
+                    </h5>
+                    <p class="text-[0.875rem] font-[600]">
+                      haris1922.hmh@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row p-4 border border-b-[#E3E3E3] border-t-0 border-l-0 border-r-0 mb-2"
+                >
+                  <img
+                    src="./src/assets/location.svg"
+                    alt=""
+                    class="relative right-1"
+                  />
+                  <div class="flex flex-col mx-3 font-raleway">
+                    <h5 class="text-[0.875rem] text-[#1A100380] opacity-[50%]">
+                      Location
+                    </h5>
+                    <p class="text-[0.875rem] font-[600]">Jakarta, Indonesia</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center">
+                  <a
+                    class="flex justify-center items-center bg-secondary p-2 font-raleway rounded-[1.25rem] mt-2 hover:bg-orange-600"
+                    href="https://drive.usercontent.google.com/download?id=1oNNsCHbGpF6n2rtE9TQ8Tg3cVanoP76X&export=download&authuser=0&confirm=t&uuid=4441d35f-9c50-4863-b7df-9bff8ef5f1a6&at=APZUnTWaUWA7eMDZxOIIRYd8SRUT:1691919055887"
                   >
-                    <path
-                      d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.979 19.804 4.587 19.412C4.195 19.02 3.99934 18.5493 4 18V15H6V18H18V15H20V18C20 18.55 19.804 19.021 19.412 19.413C19.02 19.805 18.5493 20.0007 18 20H6Z"
-                      fill="#F2F7FC"
-                    />
-                  </svg>
-                  <p class="text-[0.75rem] text-white mr-2">Download Resume</p>
-                </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      class="mx-2"
+                    >
+                      <path
+                        d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.979 19.804 4.587 19.412C4.195 19.02 3.99934 18.5493 4 18V15H6V18H18V15H20V18C20 18.55 19.804 19.021 19.412 19.413C19.02 19.805 18.5493 20.0007 18 20H6Z"
+                        fill="#F2F7FC"
+                      />
+                    </svg>
+                    <p class="text-[0.75rem] text-white mr-2">
+                      Download Resume
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -337,11 +172,11 @@
       </aside>
       <!-- CONTENT START -->
       <section
-        class="container flex flex-col min-h-screen max-[640px]:relative max-[640px]:right-4 md:justify-end md:relative md:bottom-24 md:min-w-[51.25rem] md:min-h-[43.75rem] lg:min-w-[51.25rem] lg:min-h-[43.75rem]"
+        class="container flex flex-col min-h-screen md:justify-end md:relative md:bottom-[4.8rem] md:max-w-[50rem] md:max-h-[62rem] p-3"
         id="about"
       >
         <!-- NAVBAR START -->
-        <div class="md:justify-end flex relative md:right-20 lg:right-36">
+        <div class="md:justify-end flex relative md:right-10">
           <div
             class="flex flex-row bg-[#F2F7FC] p-3 rounded-[20px] w-full max-w-[25rem] justify-center items-center shadow-md max-h-[6.25rem] relative md:right-20 lg:right-20"
           >
@@ -425,7 +260,9 @@
           <div class="flex justify-start w-full">
             <div class="p-4 md:max-w-[45rem]">
               <div class="flex flex-row">
-                <h5 class="font-[500] md:text-[2.5rem]">Resume</h5>
+                <h5 class="font-[500] md:text-[2.5rem] text-[1.5rem]">
+                  Resume
+                </h5>
                 <div
                   class="flex justify-center items-center mx-2 max-w-[5rem] md:max-w-[15rem] md:mx-4"
                 >

@@ -1,7 +1,3 @@
-const navMenu = document.getElementById("navMenu");
-const sideList = document.getElementById("sideList");
-const activeSideList = document.getElementById("activeSideList");
-const profile = document.getElementById("profile");
 const homeBtn = document.getElementById("home");
 const homeSVG = document.getElementById("homeSVG");
 const homeText = document.getElementById("homeText");
@@ -11,44 +7,6 @@ const resumeText = document.getElementById("resumeText");
 const contactBtn = document.getElementById("contact");
 const contactSVG = document.getElementById("contactSVG");
 const contactText = document.getElementById("contactText");
-
-navMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-active");
-  if (navMenu.classList.contains("nav-active")) {
-    sideList.classList.remove("flex");
-    sideList.classList.add("hidden");
-    about.classList.remove("flex");
-    about.classList.add("hidden");
-    activeSideList.classList.remove("hidden");
-    activeSideList.classList.add("flex");
-  } else {
-    sideList.classList.add("flex");
-    sideList.classList.remove("hidden");
-    about.classList.add("flex");
-    about.classList.remove("hidden");
-    activeSideList.classList.remove("flex");
-    activeSideList.classList.add("hidden");
-  }
-});
-
-profile.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-active");
-  if (navMenu.classList.contains("nav-active")) {
-    sideList.classList.remove("flex");
-    sideList.classList.add("hidden");
-    about.classList.remove("flex");
-    about.classList.add("hidden");
-    activeSideList.classList.remove("hidden");
-    activeSideList.classList.add("flex");
-  } else {
-    sideList.classList.add("flex");
-    sideList.classList.remove("hidden");
-    about.classList.add("flex");
-    about.classList.remove("hidden");
-    activeSideList.classList.remove("flex");
-    activeSideList.classList.add("hidden");
-  }
-});
 
 const onHomeClick = () => {
   // NAVBAR LOGIC
