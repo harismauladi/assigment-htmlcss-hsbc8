@@ -1,6 +1,10 @@
+# Gihub Pages Link
+
+https://harismauladi.github.io/assigment-htmlcss-hsbc8/index.html
+
 # Portofolio Web
 
-This website contain my personal info for commercial purpose
+This website contain my personal info for commercial purpose.
 
 # Run
 
