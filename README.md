@@ -1,4 +1,4 @@
-# Gihub Pages Link
+# Github Pages Link
 
 https://harismauladi.github.io/assigment-htmlcss-hsbc8/index.html
 
